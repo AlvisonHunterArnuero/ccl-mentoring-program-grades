@@ -22,6 +22,7 @@ export interface Data {
         scrum: string;
     };
     batch: number;
+    stack: string;
 }
 
 
@@ -33,3 +34,12 @@ export interface FirebaseConfig {
     messagingSenderId: string;
     appId: string;
 }
+
+
+export type customTagBgColorProps = {
+    english?: string;
+    scrum?: string;
+    cyberSecurity?: string
+}
+
+export type NotificationType = 'success' | 'info' | 'warning' | 'error';
